@@ -1,0 +1,13 @@
+br
+
+div.blankslate
+	if(out.global.user)
+		profile
+		br
+
+	if(out.global.user)
+		lang var="interpolatedGreeting" value=[out.global.user._json.name || out.global.user.username]
+	else
+		lang var="greeting"
+
+	example
